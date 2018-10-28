@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="QuickBalanceUIIntentExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-TO-Uug">
+                                <rect key="frame" x="20" y="39" width="280" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-Mv-jHr">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYQ-og-oBf" userLabel="Balance">
+                                        <rect key="frame" x="0.0" y="24" width="48.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aye-yi-6g6" userLabel="Other balance">
+                                        <rect key="frame" x="0.0" y="55" width="35.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NS-wA-Vkg">
+                                <rect key="frame" x="16" y="149" width="288" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qtz-sh-E8c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="3NS-wA-Vkg" secondAttribute="trailing" constant="16" id="7Kf-eM-kye"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="bottom" secondItem="3NS-wA-Vkg" secondAttribute="bottom" id="JcO-vt-ah1"/>
+                            <constraint firstItem="3NS-wA-Vkg" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="16" id="JsM-yl-JxS"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="kdt-TO-Uug" secondAttribute="trailing" constant="20" id="Jvd-l2-Lot"/>
+                            <constraint firstItem="kdt-TO-Uug" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="RSg-oJ-Cb6"/>
+                            <constraint firstItem="kdt-TO-Uug" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="20" id="dq6-vO-EtP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="balanceLabel" destination="mYQ-og-oBf" id="hjk-tB-sAw"/>
+                        <outlet property="nameLabel" destination="4gm-Mv-jHr" id="QfD-Et-qXK"/>
+                        <outlet property="otherBalanceLabel" destination="Aye-yi-6g6" id="nUb-FT-0yz"/>
+                        <outlet property="separatorView" destination="3NS-wA-Vkg" id="fff-FA-zwB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="133.13343328335833"/>
+        </scene>
+    </scenes>
+</document>

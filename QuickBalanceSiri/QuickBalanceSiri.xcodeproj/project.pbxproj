@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB23333521846780005BEA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23333421846780005BEA51 /* AppDelegate.swift */; };
+		EB23333721846780005BEA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23333621846780005BEA51 /* ViewController.swift */; };
+		EB23333A21846780005BEA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB23333821846780005BEA51 /* Main.storyboard */; };
+		EB23333C21846782005BEA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB23333B21846782005BEA51 /* Assets.xcassets */; };
+		EB23333F21846782005BEA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB23333D21846782005BEA51 /* LaunchScreen.storyboard */; };
+		EB23334E218467AB005BEA51 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23334D218467AB005BEA51 /* IntentHandler.swift */; };
+		EB233352218467AB005BEA51 /* QuickBalanceIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB23334B218467AB005BEA51 /* QuickBalanceIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB23335821847137005BEA51 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23335721847137005BEA51 /* Account.swift */; };
+		EB23336021847C1A005BEA51 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB23335F21847C1A005BEA51 /* IntentsUI.framework */; };
+		EB23336321847C1A005BEA51 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23336221847C1A005BEA51 /* IntentViewController.swift */; };
+		EB23336621847C1A005BEA51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB23336421847C1A005BEA51 /* MainInterface.storyboard */; };
+		EB23336A21847C1A005BEA51 /* QuickBalanceUIIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB23335D21847C1A005BEA51 /* QuickBalanceUIIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB23336F21851671005BEA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23333621846780005BEA51 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB233350218467AB005BEA51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB23332921846780005BEA51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB23334A218467AB005BEA51;
+			remoteInfo = QuickBalanceIntent;
+		};
+		EB23336821847C1A005BEA51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB23332921846780005BEA51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB23335C21847C1A005BEA51;
+			remoteInfo = QuickBalanceUIIntentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB233356218467AB005BEA51 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB233352218467AB005BEA51 /* QuickBalanceIntent.appex in Embed App Extensions */,
+				EB23336A21847C1A005BEA51 /* QuickBalanceUIIntentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB23333121846780005BEA51 /* QuickBalanceSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickBalanceSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB23333421846780005BEA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB23333621846780005BEA51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB23333921846780005BEA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB23333B21846782005BEA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB23333E21846782005BEA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB23334021846782005BEA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB23334621846792005BEA51 /* QuickBalanceSiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickBalanceSiri.entitlements; sourceTree = "<group>"; };
+		EB23334B218467AB005BEA51 /* QuickBalanceIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickBalanceIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB23334D218467AB005BEA51 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		EB23334F218467AB005BEA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB23335721847137005BEA51 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		EB23335D21847C1A005BEA51 /* QuickBalanceUIIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickBalanceUIIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB23335F21847C1A005BEA51 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		EB23336221847C1A005BEA51 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		EB23336521847C1A005BEA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EB23336721847C1A005BEA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB23332E21846780005BEA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB233348218467AB005BEA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB23335A21847C1A005BEA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB23336021847C1A005BEA51 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB23332821846780005BEA51 = {
+			isa = PBXGroup;
+			children = (
+				EB23333321846780005BEA51 /* QuickBalanceSiri */,
+				EB23334C218467AB005BEA51 /* QuickBalanceIntent */,
+				EB23336121847C1A005BEA51 /* QuickBalanceUIIntentExtension */,
+				EB23335E21847C1A005BEA51 /* Frameworks */,
+				EB23333221846780005BEA51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB23333221846780005BEA51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB23333121846780005BEA51 /* QuickBalanceSiri.app */,
+				EB23334B218467AB005BEA51 /* QuickBalanceIntent.appex */,
+				EB23335D21847C1A005BEA51 /* QuickBalanceUIIntentExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB23333321846780005BEA51 /* QuickBalanceSiri */ = {
+			isa = PBXGroup;
+			children = (
+				EB23334621846792005BEA51 /* QuickBalanceSiri.entitlements */,
+				EB23333421846780005BEA51 /* AppDelegate.swift */,
+				EB23333621846780005BEA51 /* ViewController.swift */,
+				EB23333821846780005BEA51 /* Main.storyboard */,
+				EB23333B21846782005BEA51 /* Assets.xcassets */,
+				EB23333D21846782005BEA51 /* LaunchScreen.storyboard */,
+				EB23334021846782005BEA51 /* Info.plist */,
+				EB23335721847137005BEA51 /* Account.swift */,
+			);
+			path = QuickBalanceSiri;
+			sourceTree = "<group>";
+		};
+		EB23334C218467AB005BEA51 /* QuickBalanceIntent */ = {
+			isa = PBXGroup;
+			children = (
+				EB23334D218467AB005BEA51 /* IntentHandler.swift */,
+				EB23334F218467AB005BEA51 /* Info.plist */,
+			);
+			path = QuickBalanceIntent;
+			sourceTree = "<group>";
+		};
+		EB23335E21847C1A005BEA51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB23335F21847C1A005BEA51 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB23336121847C1A005BEA51 /* QuickBalanceUIIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EB23336221847C1A005BEA51 /* IntentViewController.swift */,
+				EB23336421847C1A005BEA51 /* MainInterface.storyboard */,
+				EB23336721847C1A005BEA51 /* Info.plist */,
+			);
+			path = QuickBalanceUIIntentExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB23333021846780005BEA51 /* QuickBalanceSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB23334321846782005BEA51 /* Build configuration list for PBXNativeTarget "QuickBalanceSiri" */;
+			buildPhases = (
+				EB23332D21846780005BEA51 /* Sources */,
+				EB23332E21846780005BEA51 /* Frameworks */,
+				EB23332F21846780005BEA51 /* Resources */,
+				EB233356218467AB005BEA51 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB233351218467AB005BEA51 /* PBXTargetDependency */,
+				EB23336921847C1A005BEA51 /* PBXTargetDependency */,
+			);
+			name = QuickBalanceSiri;
+			productName = QuickBalanceSiri;
+			productReference = EB23333121846780005BEA51 /* QuickBalanceSiri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB23334A218467AB005BEA51 /* QuickBalanceIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB233353218467AB005BEA51 /* Build configuration list for PBXNativeTarget "QuickBalanceIntent" */;
+			buildPhases = (
+				EB233347218467AB005BEA51 /* Sources */,
+				EB233348218467AB005BEA51 /* Frameworks */,
+				EB233349218467AB005BEA51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickBalanceIntent;
+			productName = QuickBalanceIntent;
+			productReference = EB23334B218467AB005BEA51 /* QuickBalanceIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EB23335C21847C1A005BEA51 /* QuickBalanceUIIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB23336B21847C1A005BEA51 /* Build configuration list for PBXNativeTarget "QuickBalanceUIIntentExtension" */;
+			buildPhases = (
+				EB23335921847C1A005BEA51 /* Sources */,
+				EB23335A21847C1A005BEA51 /* Frameworks */,
+				EB23335B21847C1A005BEA51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickBalanceUIIntentExtension;
+			productName = QuickBalanceUIIntentExtension;
+			productReference = EB23335D21847C1A005BEA51 /* QuickBalanceUIIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB23332921846780005BEA51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = iemrollin;
+				TargetAttributes = {
+					EB23333021846780005BEA51 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					EB23334A218467AB005BEA51 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					EB23335C21847C1A005BEA51 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = EB23332C21846780005BEA51 /* Build configuration list for PBXProject "QuickBalanceSiri" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB23332821846780005BEA51;
+			productRefGroup = EB23333221846780005BEA51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB23333021846780005BEA51 /* QuickBalanceSiri */,
+				EB23334A218467AB005BEA51 /* QuickBalanceIntent */,
+				EB23335C21847C1A005BEA51 /* QuickBalanceUIIntentExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB23332F21846780005BEA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB23333F21846782005BEA51 /* LaunchScreen.storyboard in Resources */,
+				EB23333C21846782005BEA51 /* Assets.xcassets in Resources */,
+				EB23333A21846780005BEA51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB233349218467AB005BEA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB23335B21847C1A005BEA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB23336621847C1A005BEA51 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB23332D21846780005BEA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB23333721846780005BEA51 /* ViewController.swift in Sources */,
+				EB23333521846780005BEA51 /* AppDelegate.swift in Sources */,
+				EB23335821847137005BEA51 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB233347218467AB005BEA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB23334E218467AB005BEA51 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB23335921847C1A005BEA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB23336F21851671005BEA51 /* ViewController.swift in Sources */,
+				EB23336321847C1A005BEA51 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB233351218467AB005BEA51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB23334A218467AB005BEA51 /* QuickBalanceIntent */;
+			targetProxy = EB233350218467AB005BEA51 /* PBXContainerItemProxy */;
+		};
+		EB23336921847C1A005BEA51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB23335C21847C1A005BEA51 /* QuickBalanceUIIntentExtension */;
+			targetProxy = EB23336821847C1A005BEA51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB23333821846780005BEA51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB23333921846780005BEA51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB23333D21846782005BEA51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB23333E21846782005BEA51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB23336421847C1A005BEA51 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB23336521847C1A005BEA51 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB23334121846782005BEA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB23334221846782005BEA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB23334421846782005BEA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickBalanceSiri/QuickBalanceSiri.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYS8T9C648;
+				INFOPLIST_FILE = QuickBalanceSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iemrollin.QuickBalanceSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB23334521846782005BEA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickBalanceSiri/QuickBalanceSiri.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYS8T9C648;
+				INFOPLIST_FILE = QuickBalanceSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iemrollin.QuickBalanceSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB233354218467AB005BEA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYS8T9C648;
+				INFOPLIST_FILE = QuickBalanceIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iemrollin.QuickBalanceSiri.QuickBalanceIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB233355218467AB005BEA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYS8T9C648;
+				INFOPLIST_FILE = QuickBalanceIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iemrollin.QuickBalanceSiri.QuickBalanceIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB23336C21847C1A005BEA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYS8T9C648;
+				INFOPLIST_FILE = QuickBalanceUIIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iemrollin.QuickBalanceSiri.QuickBalanceUIIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB23336D21847C1A005BEA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYS8T9C648;
+				INFOPLIST_FILE = QuickBalanceUIIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iemrollin.QuickBalanceSiri.QuickBalanceUIIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB23332C21846780005BEA51 /* Build configuration list for PBXProject "QuickBalanceSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB23334121846782005BEA51 /* Debug */,
+				EB23334221846782005BEA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB23334321846782005BEA51 /* Build configuration list for PBXNativeTarget "QuickBalanceSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB23334421846782005BEA51 /* Debug */,
+				EB23334521846782005BEA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB233353218467AB005BEA51 /* Build configuration list for PBXNativeTarget "QuickBalanceIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB233354218467AB005BEA51 /* Debug */,
+				EB233355218467AB005BEA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB23336B21847C1A005BEA51 /* Build configuration list for PBXNativeTarget "QuickBalanceUIIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB23336C21847C1A005BEA51 /* Debug */,
+				EB23336D21847C1A005BEA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB23332921846780005BEA51 /* Project object */;
+}
