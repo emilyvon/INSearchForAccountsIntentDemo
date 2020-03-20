@@ -15,6 +15,16 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     @IBOutlet weak var otherBalanceLabel: UILabel!
     @IBOutlet weak var separatorView: UIView!
     
+    lazy var formatter: NumberFormatter = {
+        $0.locale = Locale.current
+        $0.numberStyle = .currency
+        return $0
+    }(NumberFormatter())
+    
+//    if let formattedTipAmount = formatter.string(from: tipAmount as NSNumber) {
+//        tipAmountLabel.text = "Tip Amount: \(formattedTipAmount)"
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -53,21 +63,21 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
             let currentAccount = accounts[currentIndex]
             
             if let name = currentAccount.nickname?.spokenPhrase {
-                nameLabel.text = "\(name)"
+                nameLabel.text = name
                 nameLabel.isHidden = false
             } else {
                 nameLabel.isHidden = true
             }
             
-            if let balance = currentAccount.balance?.amount?.stringValue {
-                balanceLabel.text = "\(balance)"
+            if let balance = currentAccount.balance?.amount {
+                balanceLabel.text = formatter.string(from: balance)
                 balanceLabel.isHidden = false
             } else {
                 balanceLabel.isHidden = true
             }
             
-            if let otherBalance = currentAccount.secondaryBalance?.amount?.stringValue {
-                otherBalanceLabel.text = "$\(otherBalance)"
+            if let otherBalance = currentAccount.secondaryBalance?.amount {
+                otherBalanceLabel.text = formatter.string(from: otherBalance)
                 otherBalanceLabel.isHidden = false
             } else {
                 otherBalanceLabel.isHidden = true
